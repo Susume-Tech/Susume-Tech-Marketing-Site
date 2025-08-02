@@ -6,6 +6,8 @@
 
     --text-color: #424046;
     --text-highlight-color: rgb(250, 162, 212);
+
+    background-color: var(--bg-color);
 }
 
 @media (prefers-color-scheme: dark){
