@@ -5,6 +5,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Susume Tech</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Susume Tech -->
     <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -13,80 +21,114 @@
         <header class="page-header">
             <nav>
                 <ul class="main-nav">
-                    <li><a href="#about" class="active">About</a></li>
-                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
                     <li><a href="#team">Our Team</a></li>
-                    <li class="push"><a href="#contact">Contact</a></li>
+                    <li class="push"><a href="#contact" class="cta-small">Contact</a></li>
                 </ul>
             </nav>
         </header>
 
-        <main class="page-body">
-            <section id="about">
-                <h1>Welcome to Susume Tech</h1>
-                <p>
-                    Advancing tech, one step at a time.
-                </p>
-                <a href="#contact" class="cta-button">Let's Build Together</a>
-                <br/>
-                <br/>
-                <div class="mission-vision">
+        <main>
+            <section class="hero">
+                <div>
+                    <h1>Welcome to <span>Susume Tech</span></h1>
+                    <p>Advancing tech, one step at a time.</p>
+                    <a href="#contact" class="cta-button">Let's Build Together</a>
+                </div>
+            </section>
+
+            <section id="about" class="segments-section">
+                <div>
+                    <h2>Who we are</h2>
+                    <p>
+                        Susume Tech is a small, founder-led software company focused on building robust backend systems, 
+                        CI/CD pipelines, and developer-friendly products. 
+                        
+                        The founder has a strong desire for innovation and aims to make the company a place where innovative 
+                        minds can blossom their talents. The company focuses mainly on building its own products while simultaniously 
+                        building custom solutions for clients.
+                    </p>
+                </div>
+                <div>
                     <h2>Our Mission</h2>
                     <p>
                         To develop innovative, reliable, and user-focused software solutions that solve real-world
                         challenges.
                     </p>
-
+                </div>
+                <div>
                     <h2>Our Vision</h2>
                     <p>
-                        To be a leading African tech innovator, delivering scalable solutions that empower businesses
-                        and individuals alike.
+                        To be a leading African tech innovator, delivering scalable solutions that empower businesses and
+                        individuals alike.
+
+                        Be the go-to provider for trustworthy backend tooling and automated deployments that solves real 
+                        operational pain for NGOs, SMEs, and local enterprises.
                     </p>
+                </div>
+                <div>
+                    <h2>Core Values</h2>
+                    <ul style="list-style-position: inside;">
+                        <li>Reliability over flash.</li>
+                        <li>Keep things simple and self-hostable where it matters.</li>
+                        <li>Product-first: ship small, iterate fast.</li>
+                    </ul>
                 </div>
             </section>
 
-            <section id="products">
+            <section id="services">
                 <h2>What We Do</h2>
                 <ul class="offerings">
                     <li>
+                        <i class="fa-solid fa-code fa-2x"></i>
                         <h3>Web API Development</h3>
-                        <p>
-                            Scalable APIs built with technologies like .NET and Node.js to support cross-platform
-                            applications and multiple operating systems.
-                        </p>
+                        <p>Scalable APIs built with .NET and Node.js to support cross-platform applications and multiple
+                            operating systems.</p>
                     </li>
                     <li>
-                        <h3>CI/CD Pipeline Automation</h3>
-                        <p>
-                            Design and implement modern CI/CD pipelines to automate the build, test, release, and
-                            deployment processes of your web projects—minimizing downtime and maximizing productivity.
-                        </p>
+                        <i class="fa-solid fa-gear fa-2x"></i>
+                        <h3>CI/CD + Cloud Deployment</h3>
+                        <p>Design and implement modern CI/CD pipelines to automate build, test, release, and deployment
+                            processes—minimizing downtime and maximizing productivity. Configure GitLab pipelines, Dockerize applications, and deploy to AWS/GCP</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-wrench fa-2x"></i>
+                        <h3>Migration & Maintenance</h3>
+                        <p>Migrate legacy apps to containerized deployments</p>
                     </li>
                 </ul>
             </section>
 
             <section id="team">
-                <h2>Founder</h2>
-                <p><strong>Bright Chauke</strong> – Software Engineer, Founder & Director</p>
-                <p>
-                    Currently running Susume Tech as a solo founder, with collaborative support on a project basis when
-                    needed.
-                </p>
+                <div class="team-member">
+                    <h2>Founder</h2>
+                    <img src="images/founder.jpg" alt="Bright Chauke" class="profile-pic" onclick="window.location.href = 'about-founder.html'"/>
+                    <div>
+                        <p><strong>Bright Chauke</strong> – Software Engineer, Founder & Director</p>
+                        <p>Currently running Susume Tech as a solo founder, with collaborative support on a project
+                            basis when needed.</p>
+                    </div>
+                </div>
             </section>
 
             <section id="contact">
                 <h2>Contact Us</h2>
-                <p>
-                    Email:
-                    <a href="mailto:brightmakanduchauke@gmail.com">brightmakanduchauke@gmail.com</a>
-                </p>
-                <p>
-                    Based in South Africa. Fully remote. Let's talk about your project and how we can help.
-                </p>
+                <p>Email: <a href="mailto:brightmakanduchauke@gmail.com">brightmakanduchauke@gmail.com</a></p>
+                <p>Based in South Africa. Fully remote. Let's talk about your project and how we can help.</p>
             </section>
         </main>
 
-        <footer class="page-footer">&copy; 2025 Susume Tech</footer>
+        <footer class="page-footer">
+            <div class="footer-content">
+                <p>&copy; 2025 Susume Tech</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </footer>
     </div>
 
     <script src="script.js"></script>
