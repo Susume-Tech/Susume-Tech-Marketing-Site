@@ -286,6 +286,10 @@ p {
   flex-wrap: wrap;
 }
 
+.team-member > div {
+  max-width: 70%;
+}
+
 /* Team member under another member */
 .team-member + .team-member {
   margin-top: 5rem;
