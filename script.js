@@ -26,7 +26,7 @@ window.onload = function () {
     const sections = document.querySelectorAll("main > section");
     const navLinks = document.querySelectorAll(".main-nav a");
 
-    console.log(sections);
+    // console.log(sections);
     sections.forEach(sec => {
         // Calculate the ratio of viewport height to section height
         const sectionHeight = sec.offsetHeight;
@@ -48,7 +48,7 @@ window.onload = function () {
                             link.classList.add("active");
                         }
                     });
-                   console.log("Intesecting: ", entry.target); 
+                   // console.log("Intesecting: ", entry.target); 
                 }
                 else {
                     entry.target.classList.remove("visible");
