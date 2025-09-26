@@ -14,6 +14,9 @@
 
     <!-- Susume Tech -->
     <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swagger-ui-dist@4.5.0/swagger-ui.css">
+    <script src="https://unpkg.com/swagger-ui-dist@4.5.0/swagger-ui-bundle.js"></script>
 </head>
 
 <body>
@@ -23,6 +26,7 @@
                 <ul class="main-nav">
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
+                    <li><a href="#demos">Demos</a></li>
                     <li><a href="#team">Our Team</a></li>
                     <li class="push"><a href="#contact" class="cta-small">Contact</a></li>
                 </ul>
@@ -42,12 +46,8 @@
                 <div>
                     <h2>Who we are</h2>
                     <p>
-                        Susume Tech is a small, founder-led software company focused on building robust backend systems, 
-                        CI/CD pipelines, and developer-friendly products. 
-                        
-                        The founder has a strong desire for innovation and aims to make the company a place where innovative 
-                        minds can blossom their talents. The company focuses mainly on building its own products while simultaniously 
-                        building custom solutions for clients.
+                        Susume Tech is a small, software company focused on building robust backend systems,
+                        CI/CD pipelines, and developer-friendly products.
                     </p>
                 </div>
                 <div>
@@ -60,10 +60,12 @@
                 <div>
                     <h2>Our Vision</h2>
                     <p>
-                        To be a leading African tech innovator, delivering scalable solutions that empower businesses and
+                        To be a leading South African tech innovator, delivering scalable solutions that empower businesses
+                        and
                         individuals alike.
-
-                        Be the go-to provider for trustworthy backend tooling and automated deployments that solves real 
+                    </p>
+                    <p>
+                        Be the go-to provider for trustworthy backend tooling and automated deployments that solves real
                         operational pain for NGOs, SMEs, and local enterprises.
                     </p>
                 </div>
@@ -78,19 +80,20 @@
             </section>
 
             <section id="services">
-                <h2>What We Do</h2>
+                <h2>What We<span style="opacity: 20%;">'ll</span> Do <span style="opacity: 20%;">(Not yet available)</span></h2>
                 <ul class="offerings">
                     <li>
                         <i class="fa-solid fa-code fa-2x"></i>
                         <h3>Web API Development</h3>
-                        <p>Scalable APIs built with .NET and Node.js to support cross-platform applications and multiple
+                        <p>Scalable APIs built with .NET Core to support cross-platform applications and multiple
                             operating systems.</p>
                     </li>
                     <li>
                         <i class="fa-solid fa-gear fa-2x"></i>
                         <h3>CI/CD + Cloud Deployment</h3>
                         <p>Design and implement modern CI/CD pipelines to automate build, test, release, and deployment
-                            processes—minimizing downtime and maximizing productivity. Configure GitLab pipelines, Dockerize applications, and deploy to AWS/GCP</p>
+                            processes, minimizing downtime and maximizing productivity. Configure GitLab pipelines OR Github Actions,
+                            Dockerize applications, and deploy to a cloud hosting service</p>
                     </li>
                     <li>
                         <i class="fa-solid fa-wrench fa-2x"></i>
@@ -100,14 +103,61 @@
                 </ul>
             </section>
 
+            <section id="demos">
+                <h2>Our Demo Works</h2>
+                <div class="demos-grid">
+                    <div class="demo-card">
+                        <div class="demo-header">
+                            <h3>AuthAPI</h3>
+                            <div class="card-subtitle">Personal Project</div>
+                        </div>
+                        <div class="demo-content">
+                            <p>A RESTful API built using ASP.NET Core with custom authentication services.</p>
+                            <div class="embed-container swagger" data-url="https://artisticnyungu.bsite.net/swagger/v1/swagger.json"></div>
+                        </div>
+                        <div class="demo-footer">
+                            <a href="https://artisticnyungu.bsite.net/swagger/index.html" class="demo-button">Swagger
+                                Documentation</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <section id="team">
                 <div class="team-member">
-                    <h2>Founder</h2>
-                    <img src="images/founder.jpg" alt="Bright Chauke" class="profile-pic" onclick="window.location.href = 'about-founder.html'"/>
+                    <h2>Founder & Director</h2>
+                    <img src="images/member0.jpg" alt="Bright Chauke" class="profile-pic"
+                        onclick="window.location.href = 'about-member0.html'" />
                     <div>
                         <p><strong>Bright Chauke</strong> – Software Engineer, Founder & Director</p>
-                        <p>Currently running Susume Tech as a solo founder, with collaborative support on a project
-                            basis when needed.</p>
+                        <p>Founder of Susume Tech... An everything Networking, DevOps & API enthusiast.</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <h2>Director</h2>
+                    <img src="images/member1.png" alt="Natasha Mabaire" class="profile-pic"
+                        onclick="window.location.href = 'about-member1.html'" />
+                    <div>
+                        <p><strong>Natasha Mabaire</strong> – Software Quality Engineer / Chief Quality Officer, Director</p>
+                        <p>
+                            Software Quality Engineer, ensures the reliability and performance of 
+                            projects with her detail-oriented and precise approach. She drives thorough 
+                            testing, brings fresh ideas and research, and supports the team while fostering 
+                            collaboration and innovation.</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <h2>Director</h2>
+                    <img src="images/member2.jpg" alt="Ntsako Silence Ndlovu" class="profile-pic"
+                        onclick="window.location.href = 'about-member2.html'" />
+                    <div>
+                        <p><strong>Ntsako Silence Ndlovu</strong> – Software Engineer, Director</p>
+                        <p>
+                            Ntsako is a dedicated Software Engineer with a strong background in backend development and systems integration. 
+                            As a Director at Susume Tech, he brings a passion for problem-solving, a keen eye for scalable architecture, 
+                            and a collaborative spirit to every project. Ntsako is known for his analytical mindset, technical versatility, 
+                            and commitment to delivering robust solutions that drive innovation and growth within the company.
+                        </p>
                     </div>
                 </div>
             </section>

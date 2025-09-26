@@ -35,8 +35,8 @@
     }
 
     .profile-pic {
-        width: 180px;
-        height: 180px;
+        max-width: 180px;
+        max-height: 180px;
         border: 15px solid transparent !important;
     }
 
@@ -46,6 +46,7 @@
 
     p {
         line-height: 1.6 !important;
+        margin-inline: calc(var(--max-width) * 0.1);;
     }
 
     .back-btn {
@@ -74,20 +75,17 @@
 <body>
 
 <div class="container">
-    <img src="images/founder.jpg" alt="Founder" class="profile-pic">
+    <img src="images/member0.jpg" alt="Bright Chauke" class="profile-pic">
     <h1>Bright Chauke</h1>
     <h3>Founder & Director - Susume Tech</h3>
     <p>
-        Bright is a passionate software engineer with expertise in .NET, C++, and web development.  
-        He founded Susume Tech to create innovative, efficient, and scalable software solutions  
-        that empower both individuals and businesses.  
-    </p>
-    <p>
-        Outside of coding, Bright is an artist, anime enthusiast, and creative thinker who  
-        enjoys turning ideas into reality through technology.
+        Software Engineer with expertise in development using the .NET framework. Has experience in
+        automation, networking and data design.
     </p>
 
     <a href="index.html" class="back-btn"><i class="fa-solid fa-chevron-left"></i>  Back to Home</a>
+
+    <p style="opacity: 20%; margin-top: 1.5rem;">&copy; 2025 Susume Tech</p>
 </div>
 
 </body>
