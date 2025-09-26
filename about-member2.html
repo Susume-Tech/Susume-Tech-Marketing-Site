@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Director Profile - Susume Tech</title>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- Susume Tech -->
+<link rel="stylesheet" href="style.css" />
+
+<style>
+    :root {
+        --max-width: 900px;
+    }
+
+    body {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .container {
+        max-width: var(--max-width);
+        background: var(--color-section-alt);
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        text-align: center;
+        animation: fadeIn 0.6s ease-in-out;
+    }
+
+    .profile-pic {
+        max-width: 180px;
+        max-height: 180px;
+        border: 15px solid transparent !important;
+    }
+
+    h1 {
+        margin-top: 15px;
+    }
+
+    p {
+        line-height: 1.6 !important;
+        margin-inline: calc(var(--max-width) * 0.1);;
+    }
+
+    .back-btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 18px;
+        background-color: var(--color-gradient-end);
+        color: var(--color-text);
+        border-radius: 6px;
+        text-decoration: none;
+        transition: background 0.3s;
+    }
+
+    .back-btn:hover {
+        background: var(--color-accent-hover);
+        transform: translateY(-2px);
+        box-shadow: 0 5px 10px var(--color-shadow);
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <img src="images/member2.jpg" alt="Ntsako Silence Ndlovu" class="profile-pic">
+    <h1>Ntsako Silence Ndlovu</h1>
+    <h3>Software Engineer, Director - Susume Tech</h3>
+    <p>
+        Ntsako is a dedicated Software Engineer with a strong background in backend development and systems integration.
+        As a Director at Susume Tech, he brings a passion for problem-solving, a keen eye for scalable architecture,
+        and a collaborative spirit to every project. Ntsako is known for his analytical mindset, technical versatility,
+        and commitment to delivering robust solutions that drive innovation and growth within the company.
+    </p>
+
+    <a href="index.html" class="back-btn"><i class="fa-solid fa-chevron-left"></i>  Back to Home</a>
+
+    <p style="opacity: 20%; margin-top: 1.5rem;">&copy; 2025 Susume Tech</p>
+</div>
+
+</body>
+</html>
