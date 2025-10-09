@@ -86,6 +86,59 @@ body {
 .main-nav a:hover,
 .main-nav a.active {
   color: var(--color-accent);
+  cursor: pointer;
+}
+
+/* Hide menu button on desktop */
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    overflow: visible;
+    height: auto;
+    padding: 10px 20px; /* just enough for the button */
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: var(--color-text);
+    cursor: pointer;
+  }
+
+  nav {
+    position: absolute;
+    top: 100%;
+    left: calc(-100% - 20px); /* hide offscreen & 20 more px for certainty*/
+    width: 220px;
+    background: linear-gradient(135deg, var(--color-header-bg), #000a);
+    transition: left 0.3s ease;
+    border-radius: 0 0 8px 0;
+    box-shadow: 3px 5px 10px -3px var(--color-shadow);
+  }
+
+  nav.active {
+    left: 0;
+  }
+
+  .main-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .main-nav li {
+    margin: 10px 0;
+  }
+
+  .main-nav .push {
+    margin-left: 0;
+    margin-top: 10px;
+  }
 }
 
 .push {
@@ -211,7 +264,7 @@ p {
 
 .demos-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
     gap: 2rem;
 }
 
@@ -303,8 +356,8 @@ p {
     var(--color-accent) 0%,
     transparent 100%
   ) border-box;
-  max-width: 35%;
-  position: relative;
+  max-width: calc(0.2 * (100cqw - 250px) + 162.5px); /* No magic, just a(x - p) + q. with (250px, 162.5px) being min:(container, profile-pic) */
+  position: relative; 
   cursor: pointer;
 }
 

@@ -1,4 +1,17 @@
 window.onload = function () {
+    // Toogle nav menu
+    const menuToggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('nav');
+  const contact = document.querySelector('body > div > header > nav > ul > li.push > a');
+
+  menuToggle.addEventListener('click', () => {
+    contact.classList.toggle('cta-small');
+    contact.parentNode.classList.toggle('push');
+    nav.classList.toggle('active');
+  });
+
+
+
     // Show Swagger UIs
     var containers = document.querySelectorAll(".swagger");
 
