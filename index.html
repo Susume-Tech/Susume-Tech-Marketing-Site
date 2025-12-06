@@ -1,188 +1,1204 @@
 <!DOCTYPE html>
-<html lang="en-ZA">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Susume Tech</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Susume Tech — Backend, CI/CD & Developer Tooling</title>
+  <meta name="description" content="Susume Tech builds reliable backends, CI/CD pipelines, and developer-first tooling for NGOs, SMEs, and local enterprises.">
+  <meta name="keywords" content="backend, CI/CD, developer tooling, automation, APIs, South Africa, Susume Tech">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Susume Tech -->
-    <link rel="stylesheet" href="style.css" />
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://unpkg.com/swagger-ui-dist@4.5.0/swagger-ui.css">
-    <script src="https://unpkg.com/swagger-ui-dist@4.5.0/swagger-ui-bundle.js"></script>
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
-<body>
-    <div class="wrapper">
-        <header class="page-header">
-            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
-            <nav>
-                <ul class="main-nav">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#demos">Demos</a></li>
-                    <li><a href="#team">Our Team</a></li>
-                    <li class="push"><a href="#contact" class="cta-small">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+<body class="index-page">
 
-        <main>
-            <section class="hero">
-                <div>
-                    <h1>Welcome to <span>Susume Tech</span></h1>
-                    <p>Advancing tech, one step at a time.</p>
-                    <a href="#contact" class="cta-button">Let's Build Together</a>
-                </div>
-            </section>
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-            <section id="about" class="segments-section">
-                <div>
-                    <h2>Who we are</h2>
-                    <p>
-                        Susume Tech is a small, software company focused on building robust backend systems,
-                        CI/CD pipelines, and developer-friendly products.
-                    </p>
-                </div>
-                <div>
-                    <h2>Our Mission</h2>
-                    <p>
-                        To develop innovative, reliable, and user-focused software solutions that solve real-world
-                        challenges.
-                    </p>
-                </div>
-                <div>
-                    <h2>Our Vision</h2>
-                    <p>
-                        To be a leading South African tech innovator, delivering scalable solutions that empower businesses
-                        and
-                        individuals alike.
-                    </p>
-                    <p>
-                        Be the go-to provider for trustworthy backend tooling and automated deployments that solves real
-                        operational pain for NGOs, SMEs, and local enterprises.
-                    </p>
-                </div>
-                <div>
-                    <h2>Core Values</h2>
-                    <ul style="list-style-position: outside; padding-left: 1rem;">
-                        <li>Reliability over flash.</li>
-                        <li>Keep things simple and self-hostable where it matters.</li>
-                        <li>Product-first: ship small, iterate fast.</li>
-                    </ul>
-                </div>
-            </section>
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
+        <h1 class="sitename">Susume Tech</h1>
+      </a>
 
-            <section id="services">
-                <h2>What We<span style="opacity: 20%;">'ll</span> Do <span style="opacity: 20%;">(Not yet available)</span></h2>
-                <ul class="offerings">
-                    <li>
-                        <i class="fa-solid fa-code fa-2x"></i>
-                        <h3>Web API Development</h3>
-                        <p>Scalable APIs built with .NET Core to support cross-platform applications and multiple
-                            operating systems.</p>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-gear fa-2x"></i>
-                        <h3>CI/CD + Cloud Deployment</h3>
-                        <p>Design and implement modern CI/CD pipelines to automate build, test, release, and deployment
-                            processes, minimizing downtime and maximizing productivity. Configure GitLab pipelines OR Github Actions,
-                            Dockerize applications, and deploy to a cloud hosting service</p>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-wrench fa-2x"></i>
-                        <h3>Migration & Maintenance</h3>
-                        <p>Migrate legacy apps to containerized deployments</p>
-                    </li>
-                </ul>
-            </section>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Demos</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
 
-            <section id="demos">
-                <h2>Our Demo Works</h2>
-                <div class="demos-grid">
-                    <div class="demo-card">
-                        <div class="demo-header">
-                            <h3>AuthAPI</h3>
-                            <div class="card-subtitle">Personal Project</div>
-                        </div>
-                        <div class="demo-content">
-                            <p>A RESTful API built using ASP.NET Core with custom authentication services.</p>
-                            <div class="embed-container swagger" data-url="https://artisticnyungu.bsite.net/swagger/v1/swagger.json"></div>
-                        </div>
-                        <div class="demo-footer">
-                            <a href="https://artisticnyungu.bsite.net/swagger/index.html" class="demo-button">Swagger
-                                Documentation</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
+      <a class="btn-getstarted" href="#contact">Get Started</a>
 
-            <section id="team">
-                <div class="team-member">
-                    <h2>Founder & Director</h2>
-                    <img src="images/member0.jpg" alt="Bright Chauke" class="profile-pic"
-                        onclick="window.location.href = 'about-member0.html'" />
-                    <div>
-                        <p><strong>Bright Chauke</strong> – Software Engineer, Founder & Director</p>
-                        <p>Founder of Susume Tech... An everything Networking, DevOps & API enthusiast.</p>
-                    </div>
-                </div>
-                <div class="team-member">
-                    <h2>Director</h2>
-                    <img src="images/member1.png" alt="Natasha Mabaire" class="profile-pic"
-                        onclick="window.location.href = 'about-member1.html'" />
-                    <div>
-                        <p><strong>Natasha Mabaire</strong> – Software Quality Engineer / Chief Quality Officer, Director</p>
-                        <p>
-                            Software Quality Engineer, ensures the reliability and performance of 
-                            projects with her detail-oriented and precise approach. She drives thorough 
-                            testing, brings fresh ideas and research, and supports the team while fostering 
-                            collaboration and innovation.</p>
-                    </div>
-                </div>
-                <div class="team-member">
-                    <h2>Director</h2>
-                    <img src="images/member2.jpg" alt="Ntsako Silence Ndlovu" class="profile-pic"
-                        onclick="window.location.href = 'about-member2.html'" />
-                    <div>
-                        <p><strong>Ntsako Silence Ndlovu</strong> – Software Engineer, Director</p>
-                        <p>
-                            Ntsako is a dedicated Software Engineer with a strong background in backend development and systems integration. 
-                            As a Director at Susume Tech, he brings a passion for problem-solving, a keen eye for scalable architecture, 
-                            and a collaborative spirit to every project. Ntsako is known for his analytical mindset, technical versatility, 
-                            and commitment to delivering robust solutions that drive innovation and growth within the company.
-                        </p>
-                    </div>
-                </div>
-            </section>
+    </div>
+  </header>
 
-            <section id="contact">
-                <h2>Contact Us</h2>
-                <p>Email: <a href="mailto:info@susume.tech">info@susume.tech</a></p>
-                <p>Based in South Africa. Fully remote. Let's talk about your project and how we can help.</p>
-            </section>
-        </main>
+  <main class="main">
 
-        <footer class="page-footer">
-            <div class="footer-content">
-                <p>&copy; 2025 Susume Tech</p>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+            <div class="hero-content">
+              <h1>Let's build reliable backends &amp; CI/CD that just work.</h1>
+              <p>Susume Tech builds robust backends, automation pipelines, and developer-first tooling — designed for NGOs, SMEs, and local enterprises who need dependable systems without the fluff.</p>
+              <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Let's build together</a>
+                <a href="#portfolio" class="btn btn-outline">View demos</a>
+              </div>
+              <div class="hero-stats">
+                <div class="stat-item">
+                  <span class="stat-number purecounter" data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="1"></span>
+                  <span class="stat-label">Projects Completed</span>
                 </div>
+                <div class="stat-item">
+                  <span class="stat-number purecounter" data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="1"></span>
+                  <span class="stat-label">Client Satisfaction</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number purecounter" data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1"></span>
+                  <span class="stat-label">Team Members</span>
+                </div>
+              </div>
             </div>
-        </footer>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+            <div class="hero-visual">
+              <div class="hero-image">
+                <img src="assets/img/misc/misc-16.webp" alt="Digital Agency Hero" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-bg-elements">
+        <div class="bg-shape shape-1"></div>
+        <div class="bg-shape shape-2"></div>
+        <div class="bg-particles"></div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-5 align-items-center">
+
+          <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
+            <div class="content">
+              <h6 class="subtitle">About Susume Tech</h6>
+              <h2>Reliable backends, CI/CD &amp; developer tooling</h2>
+              <p>
+                Susume Tech is a small software company focused on building robust backend systems, CI/CD pipelines, and developer‑friendly products.
+              </p>
+
+              <ul class="features-list">
+                <li><i class="bi bi-check-circle-fill"></i><span><strong>Mission:</strong> To develop innovative, reliable, and user‑focused software solutions that solve real‑world challenges.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i><span><strong>Vision:</strong> To be a leading South African tech innovator and the go‑to provider for trustworthy backend tooling and automated deployments for NGOs, SMEs, and local enterprises.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i><span><strong>Core Values:</strong> Reliability over flash. Keep things simple and self‑hostable where it matters. Product‑first: ship small, iterate fast.</span></li>
+              </ul>
+
+              <a href="#" class="btn btn-primary">Discover More</a>
+            </div>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
+            <div class="image-composition">
+              <div class="image-main">
+                <img src="assets/img/about/about-9.webp" alt="Modern office with a team working" class="img-fluid" loading="lazy">
+              </div>
+              <div class="image-secondary">
+                <img src="assets/img/about/about-square-8.webp" alt="Collaborative discussion" class="img-fluid" loading="lazy">
+              </div>
+              <div class="stats-card">
+                <div class="stats-item">
+                  <h3>1</h3>
+                  <p>Years of Expertise</p>
+                </div>
+                <div class="stats-item">
+                  <h3>3</h3>
+                  <p>Happy Clients</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>Tailored engagements that get systems running smoothly—and keep them there.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="bi bi-palette"></i>
+              </div>
+              <h4><a href="service-details.html">Web API Development</a></h4>
+              <p>Design, build, and document secure REST/GraphQL APIs with auth, logging, and observability.</p>
+              <div class="service-badge">Most Popular</div>
+              <a href="service-details.html" class="service-link">
+                <span>Learn More</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="bi bi-layout-text-window-reverse"></i>
+              </div>
+              <h4><a href="service-details.html">CI/CD + Cloud Deployment</a></h4>
+              <p>Automated build, test, and deploy pipelines with cloud environments and infrastructure as code.</p>
+              <a href="service-details.html" class="service-link">
+                <span>Learn More</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="bi bi-code-slash"></i>
+              </div>
+              <h4><a href="service-details.html">Migration &amp; Maintenance</a></h4>
+              <p>Migrate legacy systems, improve reliability and observability, and provide ongoing maintenance.</p>
+              <a href="service-details.html" class="service-link">
+                <span>Learn More</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500" style="display:none">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="bi bi-phone"></i>
+              </div>
+              <h4><a href="service-details.html">Dev-first UX</a></h4>
+              <p>Interfaces tailored for engineers and operators, not generic dashboards.</p>
+              <a href="service-details.html" class="service-link">
+                <span>Learn More</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200" style="display:none">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="bi bi-megaphone"></i>
+              </div>
+              <h4><a href="service-details.html">Resilient Architecture</a></h4>
+              <p>Modern tooling paired with boring-but-solid patterns that scale gradually.</p>
+              <a href="service-details.html" class="service-link">
+                <span>Learn More</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300" style="display:none">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="bi bi-search"></i>
+              </div>
+              <h4><a href="service-details.html">Integrated QA</a></h4>
+              <p>Contract tests, load tests, and chaos drills run as part of the release train.</p>
+              <a href="service-details.html" class="service-link">
+                <span>Learn More</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="400">
+            <div class="services-cta">
+              <h3>Ready to Transform Your Digital Presence?</h3>
+              <p>Let's discuss your project and create something amazing together</p>
+              <a href="service-details.html" class="btn btn-primary">Get Started Today</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Demos</h2>
+        <p>Explore working demos and references of our backend and automation stack.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
+            <li data-filter="*" class="filter-active">All</li>
+          </ul>
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-xl-4 col-lg-6 portfolio-item isotope-item filter-web">
+              <div class="portfolio-wrapper">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/portfolio-7.webp" alt="Creative Web Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-hover">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/portfolio-7.webp" class="glightbox action-btn preview-btn" title="Preview Project">
+                        <i class="bi bi-eye"></i>
+                      </a>
+                      <a href="https://artisticnyungu.bsite.net/swagger/index.html" class="action-btn details-btn" title="Open Swagger UI" target="_blank" rel="noopener">
+                        <i class="bi bi-arrow-up-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <div class="portfolio-meta">
+                    <span class="project-type">API</span>
+                  </div>
+                  <h3>Authentication Core</h3>
+                  <p>Register/login flows, refresh tokens, and role-based scopes. Ready to plug into existing identity layers.</p>
+                  <div class="portfolio-tech">
+                    <span class="tech-badge">ASP.NET Core</span>
+                    <span class="tech-badge">OpenAPI</span>
+                    <span class="tech-badge">JWT</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-6 portfolio-item isotope-item filter-mobile" style="display:none">
+              <div class="portfolio-wrapper">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/portfolio-8.webp" alt="Mobile App Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-hover">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/portfolio-8.webp" class="glightbox action-btn preview-btn" title="Preview">
+                        <i class="bi bi-eye"></i>
+                      </a>
+                      <a href="#contact" class="action-btn details-btn" title="Coming soon">
+                        <i class="bi bi-arrow-up-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <div class="portfolio-meta"><span class="project-type">Apps</span></div>
+                  <h3>Coming soon</h3>
+                  <p>More demos coming soon. Contact us if you want early access.</p>
+                  <div class="portfolio-tech"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-6 portfolio-item isotope-item filter-branding" style="display:none">
+              <div class="portfolio-wrapper">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/portfolio-9.webp" alt="Branding Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-hover">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/portfolio-9.webp" class="glightbox action-btn preview-btn" title="Preview">
+                        <i class="bi bi-eye"></i>
+                      </a>
+                      <a href="#contact" class="action-btn details-btn" title="Coming soon">
+                        <i class="bi bi-arrow-up-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <div class="portfolio-meta"><span class="project-type">Automation</span></div>
+                  <h3>Coming soon</h3>
+                  <p>Automation runner and pipelines showcase coming soon.</p>
+                  <div class="portfolio-tech"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-6 portfolio-item isotope-item filter-ui" style="display:none">
+              <div class="portfolio-wrapper">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/portfolio-10.webp" alt="UI/UX Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-hover">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/portfolio-10.webp" class="glightbox action-btn preview-btn" title="Preview">
+                        <i class="bi bi-eye"></i>
+                      </a>
+                      <a href="#contact" class="action-btn details-btn" title="Coming soon">
+                        <i class="bi bi-arrow-up-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <div class="portfolio-meta"><span class="project-type">Tooling</span></div>
+                  <h3>Coming soon</h3>
+                  <p>Developer tooling demos coming soon.</p>
+                  <div class="portfolio-tech"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-6 portfolio-item isotope-item filter-web" style="display:none">
+              <div class="portfolio-wrapper">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/portfolio-11.webp" alt="E-commerce Platform" class="img-fluid" loading="lazy">
+                  <div class="portfolio-hover">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/portfolio-11.webp" class="glightbox action-btn preview-btn" title="Preview">
+                        <i class="bi bi-eye"></i>
+                      </a>
+                      <a href="#contact" class="action-btn details-btn" title="Coming soon">
+                        <i class="bi bi-arrow-up-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <div class="portfolio-meta"><span class="project-type">API</span></div>
+                  <h3>Coming soon</h3>
+                  <p>Additional API demos coming soon.</p>
+                  <div class="portfolio-tech"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-6 portfolio-item isotope-item filter-mobile" style="display:none">
+              <div class="portfolio-wrapper">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/portfolio-12.webp" alt="Fintech Mobile App" class="img-fluid" loading="lazy">
+                  <div class="portfolio-hover">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/portfolio-12.webp" class="glightbox action-btn preview-btn" title="Preview">
+                        <i class="bi bi-eye"></i>
+                      </a>
+                      <a href="#contact" class="action-btn details-btn" title="Coming soon">
+                        <i class="bi bi-arrow-up-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <div class="portfolio-meta"><span class="project-type">Apps</span></div>
+                  <h3>Coming soon</h3>
+                  <p>Mobile app demos coming soon.</p>
+                  <div class="portfolio-tech"></div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Portfolio Items Container -->
+
+        </div>
+
+        <div class="portfolio-cta text-center" data-aos="fade-up" data-aos-delay="400">
+          <h4>Ready to start your next project?</h4>
+          <p>Let's work together to bring your digital vision to life</p>
+          <div class="cta-buttons">
+            <a href="#contact" class="btn btn-primary">Start a Project</a>
+            <a href="#portfolio" class="btn btn-outline">View All Work</a>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="why-us section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Features</h2>
+        <p>Everything you need to ship dependable systems.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="feature-card">
+              <div class="icon-wrapper">
+                <i class="bi bi-palette-fill"></i>
+              </div>
+              <h4>Workflow automation</h4>
+              <p>Automate business processes to boost speed, clarity, and reliability.</p>
+              <div class="feature-stats">
+                <span class="stat-number" data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="2">0</span>
+                <span class="stat-label">% Client Satisfaction</span>
+              </div>
+            </div>
+          </div><!-- End Feature Card -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="feature-card">
+              <div class="icon-wrapper">
+                <i class="bi bi-gear"></i>
+              </div>
+              <h4>CI/CD automation</h4>
+              <p>Automate build, test, release and deployment for consistent, auditable releases.</p>
+              <div class="feature-stats">
+                <span class="stat-number" data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="2">0</span>
+                <span class="stat-label">Pipelines Automated</span>
+              </div>
+            </div>
+          </div><!-- End Feature Card -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="feature-card">
+              <div class="icon-wrapper">
+                <i class="bi bi-award-fill"></i>
+              </div>
+              <h4>Performance tracking</h4>
+              <p>Real‑time metrics and dashboards so you can see the impact of every change.</p>
+              <div class="feature-stats">
+                <span class="stat-number" data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="2">0</span>
+                <span class="stat-label">+ Awards Won</span>
+              </div>
+            </div>
+          </div><!-- End Feature Card -->
+
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+            <div class="feature-showcase">
+              <img src="assets/img/illustration/illustration-14.webp" alt="Creative Process" class="img-fluid">
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+            <div class="feature-content">
+              <h3>Why teams choose Susume Tech</h3>
+              <p class="lead">We focus on developer‑first UX, resilient architecture, and integrated QA so your systems stay dependable as you scale.</p>
+
+              <div class="feature-list">
+                <div class="feature-item">
+                  <div class="feature-icon">
+                    <i class="bi bi-check-circle-fill"></i>
+                  </div>
+                  <div class="feature-text">
+                    <h5>Dev-first UX</h5>
+                    <p>Interfaces tailored for engineers and operators, not generic dashboards.</p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <div class="feature-icon">
+                    <i class="bi bi-check-circle-fill"></i>
+                  </div>
+                  <div class="feature-text">
+                    <h5>Resilient Architecture</h5>
+                    <p>Modern tooling paired with boring-but-solid patterns that scale gradually.</p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <div class="feature-icon">
+                    <i class="bi bi-check-circle-fill"></i>
+                  </div>
+                  <div class="feature-text">
+                    <h5>Integrated QA</h5>
+                    <p>Contract tests, load tests, and chaos drills run as part of the release train.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cta-wrapper">
+                <a href="#contact" class="btn btn-primary">Start Your Project</a>
+                <a href="#portfolio" class="btn btn-outline">View Demos</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Why Us Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p>Coming soon</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="testimonials-slider swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 4000
+              },
+              "slidesPerView": 1,
+              "centeredSlides": true,
+              "spaceBetween": 20,
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "768": {
+                  "slidesPerView": 1.5,
+                  "spaceBetween": 30
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 40
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="testimonial-header">
+                  <div class="user-avatar">
+                    <img src="assets/img/person/person-f-12.webp" alt="Profile Image">
+                  </div>
+                  <div class="user-info">
+                    <h3>Jennifer Martinez</h3>
+                    <span class="user-role">Product Designer</span>
+                    <div class="rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-content">
+                  <div class="quote-mark">
+                    <i class="bi bi-quote"></i>
+                  </div>
+                  <p>Testimonials coming soon.</p>
+                </div>
+                <div class="testimonial-footer">
+                  <div class="company-badge">
+                    <i class="bi bi-building"></i>
+                    <span>TechCorp</span>
+                  </div>
+                  <div class="verified-badge">
+                    <i class="bi bi-patch-check-fill"></i>
+                    <span>Verified</span>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="200">
+                <div class="testimonial-header">
+                  <div class="user-avatar">
+                    <img src="assets/img/person/person-m-11.webp" alt="Profile Image">
+                  </div>
+                  <div class="user-info">
+                    <h3>Alexander Chen</h3>
+                    <span class="user-role">Frontend Engineer</span>
+                    <div class="rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-content">
+                  <div class="quote-mark">
+                    <i class="bi bi-quote"></i>
+                  </div>
+                  <p>Testimonials coming soon.</p>
+                </div>
+                <div class="testimonial-footer">
+                  <div class="company-badge">
+                    <i class="bi bi-building"></i>
+                    <span>InnovateLab</span>
+                  </div>
+                  <div class="verified-badge">
+                    <i class="bi bi-patch-check-fill"></i>
+                    <span>Verified</span>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="300">
+                <div class="testimonial-header">
+                  <div class="user-avatar">
+                    <img src="assets/img/person/person-f-8.webp" alt="Profile Image">
+                  </div>
+                  <div class="user-info">
+                    <h3>Rachel Taylor</h3>
+                    <span class="user-role">Marketing Lead</span>
+                    <div class="rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-content">
+                  <div class="quote-mark">
+                    <i class="bi bi-quote"></i>
+                  </div>
+                  <p>Testimonials coming soon.</p>
+                </div>
+                <div class="testimonial-footer">
+                  <div class="company-badge">
+                    <i class="bi bi-building"></i>
+                    <span>GrowthCo</span>
+                  </div>
+                  <div class="verified-badge">
+                    <i class="bi bi-patch-check-fill"></i>
+                    <span>Verified</span>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="testimonial-header">
+                  <div class="user-avatar">
+                    <img src="assets/img/person/person-m-14.webp" alt="Profile Image">
+                  </div>
+                  <div class="user-info">
+                    <h3>Christopher Lee</h3>
+                    <span class="user-role">VP Engineering</span>
+                    <div class="rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-content">
+                  <div class="quote-mark">
+                    <i class="bi bi-quote"></i>
+                  </div>
+                  <p>Testimonials coming soon.</p>
+                </div>
+                <div class="testimonial-footer">
+                  <div class="company-badge">
+                    <i class="bi bi-building"></i>
+                    <span>DevStream</span>
+                  </div>
+                  <div class="verified-badge">
+                    <i class="bi bi-patch-check-fill"></i>
+                    <span>Verified</span>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="200">
+                <div class="testimonial-header">
+                  <div class="user-avatar">
+                    <img src="assets/img/person/person-f-5.webp" alt="Profile Image">
+                  </div>
+                  <div class="user-info">
+                    <h3>Amanda Rodriguez</h3>
+                    <span class="user-role">UX Researcher</span>
+                    <div class="rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-content">
+                  <div class="quote-mark">
+                    <i class="bi bi-quote"></i>
+                  </div>
+                  <p>Testimonials coming soon.</p>
+                </div>
+                <div class="testimonial-footer">
+                  <div class="company-badge">
+                    <i class="bi bi-building"></i>
+                    <span>UserFirst</span>
+                  </div>
+                  <div class="verified-badge">
+                    <i class="bi bi-patch-check-fill"></i>
+                    <span>Verified</span>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Team Section -->
+    <section id="team" class="team section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Team</h2>
+        <p>Small, dedicated and collaborative team focused on dependable delivery.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4">
+
+          <div class="col-lg-6">
+            <div class="team-intro" data-aos="fade-right" data-aos-delay="150">
+              <div class="intro-content">
+                <h3>Meet Our Exceptional Team</h3>
+                <p>Small, dedicated and collaborative team focused on dependable delivery.</p>
+                <div class="stats-row">
+                  <div class="stat-item">
+                    <span class="stat-number">0</span>
+                    <span class="stat-label">Team Members</span>
+                  </div>
+                  <div class="stat-item">
+                    <span class="stat-number">0</span>
+                    <span class="stat-label">Departments</span>
+                  </div>
+                  <div class="stat-item">
+                    <span class="stat-number">0</span>
+                    <span class="stat-label">Countries</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="team-grid" data-aos="fade-left" data-aos-delay="200">
+              <div class="member-hexagon" data-aos="zoom-in" data-aos-delay="250">
+                <div class="hexagon-inner">
+                  <img src="assets/images/ntsako.jpg" alt="Ntsako Silence Ndlovu">
+                  <div class="member-overlay">
+                    <h5>Ntsako Silence Ndlovu</h5>
+                    <span>Co‑Founder &amp; CEO</span>
+                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="member-hexagon" data-aos="zoom-in" data-aos-delay="300">
+                <div class="hexagon-inner">
+                  <img src="assets/images/fumani.jpg" alt="Fumani (Bright) Chauke">
+                  <div class="member-overlay">
+                    <h5>Fumani (Bright) Chauke</h5>
+                    <span>Co‑Founder</span>
+                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="member-hexagon" data-aos="zoom-in" data-aos-delay="350">
+                <div class="hexagon-inner">
+                  <img src="assets/images/natasha.png" alt="Natasha Mabaire">
+                  <div class="member-overlay">
+                    <h5>Natasha Mabaire</h5>
+                    <span>Co‑Founder</span>
+                    
+                  </div>
+                </div>
+              </div>
+
+              
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-12">
+            <div class="team-carousel-wrapper" data-aos="fade-up" data-aos-delay="200">
+              <h4 class="carousel-title">Leadership Team</h4>
+
+              <div class="leadership-slider swiper init-swiper">
+                <script type="application/json" class="swiper-config">
+                  {
+                    "loop": true,
+                    "speed": 600,
+                    "autoplay": {
+                      "delay": 4000
+                    },
+                    "slidesPerView": 1,
+                    "spaceBetween": 0,
+                    "pagination": {
+                      "el": ".swiper-pagination",
+                      "clickable": true
+                    },
+                    "breakpoints": {
+                      "768": {
+                        "slidesPerView": 2
+                      },
+                      "1024": {
+                        "slidesPerView": 3
+                      }
+                    }
+                  }
+                </script>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="leader-card">
+                      <div class="leader-image">
+                        <img src="assets/images/ntsako.jpg" alt="Ntsako Silence Ndlovu">
+                      </div>
+                      <div class="leader-info">
+                        <h5>Ntsako Silence Ndlovu</h5>
+                        <span class="position">Co‑Founder &amp; CEO</span>
+                        <p>Backend, integration and developer tooling.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="leader-card">
+                      <div class="leader-image">
+                        <img src="assets/images/fumani.jpg" alt="Fumani (Bright) Chauke">
+                      </div>
+                      <div class="leader-info">
+                        <h5>Fumani (Bright) Chauke</h5>
+                        <span class="position">Co‑Founder</span>
+                        <p>Networking, DevOps &amp; API enthusiast.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="leader-card">
+                      <div class="leader-image">
+                        <img src="assets/images/natasha.png" alt="Natasha Mabaire">
+                      </div>
+                      <div class="leader-info">
+                        <h5>Natasha Mabaire</h5>
+                        <span class="position">Co‑Founder</span>
+                        <p>Software Quality Engineer who ensures reliability and performance.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-lg-8 offset-lg-2">
+            <div class="join-team-cta" data-aos="fade-up" data-aos-delay="300" style="display:none">
+              <div class="cta-icon">
+                <i class="bi bi-rocket-takeoff"></i>
+              </div>
+              <div class="cta-content">
+                <h4>Ready to Join Our Mission?</h4>
+                <p>We’re a small, focused team. If you’re passionate about reliable backends and automation, let’s talk.</p>
+                <div class="cta-actions">
+                  <a href="#" class="btn btn-primary">View Open Roles</a>
+                  <a href="#" class="btn btn-outline">Learn Our Culture</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Team Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Get in touch for a quick discovery chat. We usually reply within 1–2 business days.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-center">
+          <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
+            <div class="contact-form-card">
+              <div class="form-header">
+                <div class="header-icon">
+                  <i class="bi bi-chat-dots-fill"></i>
+                </div>
+                <h3>Let's Start a Conversation</h3>
+                <p>Based in South Africa and working fully remote. Tell us about your project and we'll suggest practical next steps.</p>
+              </div>
+
+              <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="6d3cf458-fc0f-4a87-99ef-968857e5bbac">
+                <input type="checkbox" name="botcheck" style="display:none;">
+                <input type="hidden" name="captcha" value="true">
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <input type="email" class="form-control" name="email" placeholder="Email Address" required="">
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <input type="text" class="form-control" name="subject" placeholder="What's this about?" required="">
+                </div>
+
+                <div class="mb-4">
+                  <textarea class="form-control" name="message" rows="4" placeholder="Tell us more about your project..." required=""></textarea>
+                </div>
+
+                <div class="my-3">
+                  <div class="loading" style="display:none">Loading</div>
+                  <div class="error-message" style="display:none"></div>
+                  <div class="sent-message" style="display:none">Your message has been sent. Thank you!</div>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                  <span>Send Message</span>
+                  <i class="bi bi-send-fill"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="200">
+            <div class="contact-info-area">
+              <div class="info-header">
+                <h3>Ready to Transform Your Ideas?</h3>
+                <p>Based in South Africa — we partner with NGOs, SMEs, and teams to ship dependable systems.</p>
+              </div>
+
+              <div class="contact-methods">
+                <div class="method-card" data-aos="zoom-in" data-aos-delay="250">
+                  <div class="card-icon">
+                    <i class="bi bi-envelope-at"></i>
+                  </div>
+                  <div class="card-content">
+                    <h5>Email Us</h5>
+                    <p>info@susume.tech</p>
+                    <span class="response-time">Response in 2-4 hours</span>
+                  </div>
+                </div>
+
+                <div class="method-card" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="card-icon">
+                    <i class="bi bi-telephone"></i>
+                  </div>
+                  <div class="card-content">
+                    <h5>Call Us</h5>
+                    <p>+27 10 500 9000</p>
+                    <span class="response-time">Available 9AM - 6PM EST</span>
+                  </div>
+                </div>
+
+                <div class="method-card" data-aos="zoom-in" data-aos-delay="350">
+                  <div class="card-icon">
+                    <i class="bi bi-geo-alt"></i>
+                  </div>
+                  <div class="card-content">
+                    <h5>Visit Our Office</h5>
+                    <p>Cape Town, South Africa — remote friendly</p>
+                    <span class="response-time">Open Monday - Friday</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="additional-info" data-aos="fade-up" data-aos-delay="400">
+                <div class="info-stats">
+                  <div class="stat-item">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">Average Response</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">Client Satisfaction</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">Projects Delivered</div>
+                  </div>
+                </div>
+
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Susume Tech</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Cape Town, South Africa</p>
+            <p>Remote friendly</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+27 10 500 9000</span></p>
+            <p><strong>Email:</strong> <span>info@susume.tech</span></p>
+          </div>
+          
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Demos</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-3 footer-links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="service-details.html">Web API Development</a></li>
+            <li><a href="service-details.html">CI/CD + Cloud Deployment</a></li>
+            <li><a href="service-details.html">Migration &amp; Maintenance</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-3 footer-links">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
 
-    <script src="script.js"></script>
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Susume Tech</strong> <span>All Rights Reserved</span></p>
+      
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    (function(){
+      document.querySelectorAll("form[action='https://api.web3forms.com/submit']").forEach(function(form){
+        form.addEventListener('submit', function(e){
+          e.preventDefault();
+          var loading = form.querySelector('.loading');
+          var errorEl = form.querySelector('.error-message');
+          var sentEl = form.querySelector('.sent-message');
+          if (loading) loading.style.display = 'block';
+          if (errorEl) { errorEl.style.display = 'none'; errorEl.textContent = ''; }
+          if (sentEl) sentEl.style.display = 'none';
+          var formData = new FormData(form);
+          fetch(form.action, { method: 'POST', body: formData, headers: { 'Accept': 'application/json' } })
+            .then(function(res){
+              return res.json().catch(function(){ return {}; }).then(function(data){ return { ok: res.ok, data: data }; });
+            })
+            .then(function(result){
+              if (loading) loading.style.display = 'none';
+              if (result.ok && (!result.data || result.data.success !== false)) {
+                if (sentEl) sentEl.style.display = 'block';
+                form.reset();
+              } else {
+                if (errorEl) { errorEl.textContent = (result.data && result.data.message) || 'Form submission failed.'; errorEl.style.display = 'block'; }
+              }
+            })
+            .catch(function(err){
+              if (loading) loading.style.display = 'none';
+              if (errorEl) { errorEl.textContent = String(err); errorEl.style.display = 'block'; }
+            });
+        });
+      });
+    })();
+  </script>
+
 </body>
 
 </html>
