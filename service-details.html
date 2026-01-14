@@ -72,8 +72,8 @@
       </div>
 
       <div class="title-wrapper">
-        <h1>Web &amp; App Development</h1>
-        <p>Modern full‑stack web and mobile apps with clean APIs, security, and CI/CD baked in.</p>
+        <h1 id="service-title">Web &amp; App Development</h1>
+        <p id="service-subtitle">Modern full‑stack web and mobile apps with clean APIs, security, and CI/CD baked in.</p>
       </div>
     </div><!-- End Page Title -->
 
@@ -87,19 +87,19 @@
           <!-- Service Overview -->
           <div class="col-lg-8">
             <div class="service-content">
-              <h2>Web &amp; App Development</h2>
-              <p class="lead">From backend APIs and databases to responsive frontends and mobile, we ship reliable systems with developer‑first UX.</p>
+              <h2 id="service-title-2">Web &amp; App Development</h2>
+              <p class="lead" id="service-lead">From backend APIs and databases to responsive frontends and mobile, we ship reliable systems with developer‑first UX.</p>
 
               <div class="service-image" data-aos="fade-up" data-aos-delay="200">
-                <img src="assets/img/services/services-3.webp" alt="Web &amp; App Development" class="img-fluid rounded">
+                <img id="service-image" src="assets/img/services/services-3.webp" alt="Web &amp; App Development" class="img-fluid rounded">
               </div>
 
-              <p>We prioritise reliability, security and maintainability. Expect clean architecture, telemetry, and documentation that makes your team faster over time.</p>
+              <p id="service-description">We prioritise reliability, security and maintainability. Expect clean architecture, telemetry, and documentation that makes your team faster over time.</p>
 
               <!-- Service Features -->
               <div class="service-features" data-aos="fade-up" data-aos-delay="300">
                 <h4>What's Included</h4>
-                <div class="row gy-3">
+                <div class="row gy-3" id="service-features">
                   <div class="col-md-6">
                     <div class="feature-item">
                       <i class="bi bi-code-slash flex-shrink-0"></i>
@@ -142,7 +142,7 @@
               <!-- Process Steps -->
               <div class="service-process" data-aos="fade-up" data-aos-delay="400">
                 <h4>Our Process</h4>
-                <div class="process-steps">
+                <div class="process-steps" id="service-process">
                   <div class="step-item">
                     <div class="step-number">01</div>
                     <div class="step-content">
@@ -184,7 +184,7 @@
               <!-- Service Quick Facts -->
               <div class="service-info">
                 <h4>Service Details</h4>
-                <ul class="service-facts">
+                <ul class="service-facts" id="service-facts">
                   <li>
                     <span class="fact-label">Duration:</span>
                     <span class="fact-value">3-6 Months</span>
@@ -358,6 +358,88 @@
             });
         });
       });
+    })();
+  </script>
+
+  <script>
+    (async function () {
+      const params = new URLSearchParams(window.location.search);
+      const serviceKey = params.get("service");
+
+      if (!serviceKey) {
+        redirectHome();
+        return;
+      }
+
+      let data;
+
+      try {
+        const res = await fetch("assets/data/services.json");
+        data = await res.json();
+      } catch (err) {
+        redirectHome();
+        return;
+      }
+
+      const service = data[serviceKey];
+
+      if (!service) {
+        redirectHome();
+        return;
+      }
+
+      // Titles
+      document.getElementById("service-title").textContent = service.title;
+      document.getElementById("service-title-2").textContent = service.title;
+      document.getElementById("service-subtitle").textContent = service.subtitle;
+      document.getElementById("service-lead").textContent = service.lead;
+
+      // Image & description
+      const img = document.getElementById("service-image");
+      img.src = service.image;
+      img.alt = service.title;
+
+      document.getElementById("service-description").textContent = service.description;
+
+      // Features
+      const featuresEl = document.getElementById("service-features");
+      featuresEl.innerHTML = service.features.map(f => `
+        <div class="col-md-6">
+          <div class="feature-item">
+            <i class="bi ${f.icon} flex-shrink-0"></i>
+            <div>
+              <h5>${f.title}</h5>
+              <p>${f.text}</p>
+            </div>
+          </div>
+        </div>
+      `).join("");
+
+      // Process
+      const processEl = document.getElementById("service-process");
+      processEl.innerHTML = service.process.map((p, i) => `
+        <div class="step-item">
+          <div class="step-number">${String(i + 1).padStart(2, "0")}</div>
+          <div class="step-content">
+            <h5>${p.title}</h5>
+            <p>${p.text}</p>
+          </div>
+        </div>
+      `).join("");
+
+      // Facts
+      const factsEl = document.getElementById("service-facts");
+      factsEl.innerHTML = Object.entries(service.facts).map(([k, v]) => `
+        <li>
+          <span class="fact-label">${k}:</span>
+          <span class="fact-value">${v}</span>
+        </li>
+      `).join("");
+
+      function redirectHome() {
+        window.location.replace("index.html");
+      }
+
     })();
   </script>
 

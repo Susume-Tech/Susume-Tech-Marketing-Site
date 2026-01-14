@@ -1,0 +1,223 @@
+{
+  "web-api-development": {
+    "category": "Backend Engineering",
+    "title": "Web API Development",
+    "subtitle": "Secure, observable APIs designed for real production workloads.",
+    "lead": "Design, build, and document secure REST and GraphQL APIs with authentication, logging, and observability built in.",
+    "image": "assets/img/services/services-1.webp",
+    "description": "We build APIs that are boring in the best way: predictable, secure, well-documented, and easy to operate. Our focus is long-term maintainability, versioning strategy, and operational visibility so your systems scale without surprises.",
+
+    "features": [
+      {
+        "icon": "bi-code-slash",
+        "title": "REST & GraphQL APIs",
+        "text": "Clean contract-first API design with OpenAPI/Swagger and GraphQL schemas."
+      },
+      {
+        "icon": "bi-shield-lock",
+        "title": "Authentication & Authorization",
+        "text": "JWT, OAuth2, role-based access control, and audit logging."
+      },
+      {
+        "icon": "bi-activity",
+        "title": "Observability",
+        "text": "Structured logging, metrics, tracing, and production-grade monitoring."
+      },
+      {
+        "icon": "bi-journal-code",
+        "title": "Documentation",
+        "text": "Auto-generated API docs and onboarding guides for internal and external consumers."
+      }
+    ],
+
+    "process": [
+      { "title": "Requirements & Domain Modeling", "text": "Clarify business workflows, data ownership, and integration points." },
+      { "title": "API Design", "text": "Define contracts, error models, authentication flows, and versioning strategy." },
+      { "title": "Implementation", "text": "Build with automated tests, linting, and CI quality gates." },
+      { "title": "Release & Monitoring", "text": "Deploy with dashboards, alerts, and operational runbooks." }
+    ],
+
+    "facts": {
+      "Duration": "1–3 Months",
+      "Delivery": "Weekly milestones",
+      "Team Size": "2–4 engineers",
+      "Support": "Business hours + on-call options"
+    }
+  },
+
+  "cicd-cloud-deployment": {
+    "category": "DevOps & Automation",
+    "title": "CI/CD + Cloud Deployment",
+    "subtitle": "Automated pipelines and reproducible infrastructure.",
+    "lead": "Automated build, test, and deploy pipelines with cloud environments and infrastructure as code.",
+    "image": "assets/img/services/services-2.webp",
+    "description": "We design CI/CD systems that are deterministic, auditable, and easy to operate. Every change is tested, versioned, and deployable on demand with minimal human intervention.",
+
+    "features": [
+      {
+        "icon": "bi-diagram-3",
+        "title": "CI Pipelines",
+        "text": "Automated builds, unit tests, security scans, and artifact publishing."
+      },
+      {
+        "icon": "bi-cloud-upload",
+        "title": "CD Automation",
+        "text": "Blue-green and rolling deployments with rollback support."
+      },
+      {
+        "icon": "bi-hdd-network",
+        "title": "Infrastructure as Code",
+        "text": "Terraform, Bicep, or CloudFormation for reproducible environments."
+      },
+      {
+        "icon": "bi-shield-check",
+        "title": "Security Gates",
+        "text": "Secrets management, dependency scanning, and policy enforcement."
+      }
+    ],
+
+    "process": [
+      { "title": "Pipeline Design", "text": "Map release flow and compliance requirements." },
+      { "title": "Infrastructure Modeling", "text": "Define environments as code." },
+      { "title": "Automation Build-out", "text": "Implement CI/CD with quality gates." },
+      { "title": "Operational Handover", "text": "Document, train teams, and provide runbooks." }
+    ],
+
+    "facts": {
+      "Duration": "1–2 Months",
+      "Delivery": "Pipeline per week",
+      "Team Size": "2–3 specialists",
+      "Support": "24/7 optional"
+    }
+  },
+
+  "migration-maintenance": {
+    "category": "Modernization",
+    "title": "Migration & Maintenance",
+    "subtitle": "Safely modernize legacy systems without downtime.",
+    "lead": "Migrate legacy systems, improve reliability and observability, and provide ongoing maintenance.",
+    "image": "assets/img/services/services-3.webp",
+    "description": "We specialize in incremental modernization—moving systems piece-by-piece while keeping production stable. Expect careful data handling, compatibility layers, and staged cutovers.",
+
+    "features": [
+      {
+        "icon": "bi-arrow-repeat",
+        "title": "Legacy Migration",
+        "text": "Databases, APIs, and infrastructure upgrades."
+      },
+      {
+        "icon": "bi-heart-pulse",
+        "title": "Reliability Engineering",
+        "text": "SLIs, SLOs, alerting, and incident response processes."
+      },
+      {
+        "icon": "bi-wrench",
+        "title": "Ongoing Maintenance",
+        "text": "Patch management, upgrades, and operational support."
+      },
+      {
+        "icon": "bi-clipboard-data",
+        "title": "System Audits",
+        "text": "Architecture reviews and technical debt assessment."
+      }
+    ],
+
+    "process": [
+      { "title": "System Audit", "text": "Map dependencies and risks." },
+      { "title": "Migration Plan", "text": "Define safe cutover strategy." },
+      { "title": "Incremental Delivery", "text": "Move components gradually." },
+      { "title": "Stabilization", "text": "Monitoring and performance tuning." }
+    ],
+
+    "facts": {
+      "Duration": "2–6 Months",
+      "Delivery": "Bi-weekly",
+      "Team Size": "3–5 engineers",
+      "Support": "24/7 during cutover"
+    }
+  },
+
+  "dev-first-ux": {
+    "category": "Developer Experience",
+    "title": "Dev-first UX",
+    "subtitle": "Interfaces built for engineers, not marketing screenshots.",
+    "lead": "Operational dashboards and internal tools designed for speed, clarity, and reliability.",
+    "image": "assets/img/services/services-4.webp",
+    "description": "We design internal tooling that minimizes friction for developers and operators: fast load times, keyboard-driven workflows, and zero ambiguity.",
+
+    "features": [
+      { "icon": "bi-terminal", "title": "Operator Dashboards", "text": "System health at a glance." },
+      { "icon": "bi-lightning", "title": "Fast UI", "text": "Minimal JS, optimized rendering." },
+      { "icon": "bi-sliders", "title": "Workflow Design", "text": "Task-focused layouts." }
+    ],
+
+    "process": [
+      { "title": "User Interviews", "text": "Understand operator workflows." },
+      { "title": "Prototype", "text": "Rapid iteration." },
+      { "title": "Build", "text": "Production-ready UI." }
+    ],
+
+    "facts": {
+      "Duration": "1–2 Months",
+      "Delivery": "Weekly",
+      "Team Size": "2 engineers",
+      "Support": "Business hours"
+    }
+  },
+
+  "resilient-architecture": {
+    "category": "System Design",
+    "title": "Resilient Architecture",
+    "subtitle": "Boring, reliable systems that scale safely.",
+    "lead": "Modern tooling paired with conservative patterns that avoid catastrophic failure.",
+    "image": "assets/img/services/services-5.webp",
+    "description": "We prioritize failure isolation, graceful degradation, and capacity planning over hype-driven architecture trends.",
+
+    "features": [
+      { "icon": "bi-diagram-2", "title": "Service Isolation", "text": "Limit blast radius." },
+      { "icon": "bi-clock-history", "title": "Disaster Recovery", "text": "Backups and restore testing." },
+      { "icon": "bi-speedometer2", "title": "Capacity Planning", "text": "Predictable scaling." }
+    ],
+
+    "process": [
+      { "title": "Architecture Review", "text": "Map risks." },
+      { "title": "Redesign", "text": "Introduce stability patterns." },
+      { "title": "Validation", "text": "Load and chaos testing." }
+    ],
+
+    "facts": {
+      "Duration": "1–3 Months",
+      "Delivery": "Milestones",
+      "Team Size": "2–3 architects",
+      "Support": "On-call optional"
+    }
+  },
+
+  "integrated-qa": {
+    "category": "Quality Engineering",
+    "title": "Integrated QA",
+    "subtitle": "Quality gates as part of your release train.",
+    "lead": "Contract tests, load tests, and chaos drills built directly into CI/CD.",
+    "image": "assets/img/services/services-6.webp",
+    "description": "Quality is enforced automatically—not manually at the end of a project.",
+
+    "features": [
+      { "icon": "bi-check2-square", "title": "Contract Testing", "text": "Prevent breaking changes." },
+      { "icon": "bi-graph-up", "title": "Load Testing", "text": "Validate scaling limits." },
+      { "icon": "bi-bug", "title": "Chaos Engineering", "text": "Prove failure recovery." }
+    ],
+
+    "process": [
+      { "title": "Test Strategy", "text": "Define coverage." },
+      { "title": "Automation", "text": "Embed into pipelines." },
+      { "title": "Reporting", "text": "Dashboards and alerts." }
+    ],
+
+    "facts": {
+      "Duration": "1–2 Months",
+      "Delivery": "Continuous",
+      "Team Size": "1–2 QA engineers",
+      "Support": "Business hours"
+    }
+  }
+}
