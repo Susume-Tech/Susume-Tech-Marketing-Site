@@ -208,4 +208,18 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
+  /**
+   * Populate footer service links
+   */
+  window.addEventListener('load', async function(e) {
+    let data;
+
+    const res = await fetch("assets/data/services.json");
+    data = await res.json();
+
+    const services = document.getElementById("footer-service-links");
+      services.innerHTML = Object.entries(data).map(([k, v]) => `
+        <li><a href="service-details.html?service=${k}">${v.title}</a></li>
+      `).join("");
+  });
 })();

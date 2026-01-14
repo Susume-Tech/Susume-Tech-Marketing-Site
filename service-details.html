@@ -64,16 +64,16 @@
       <div class="breadcrumbs">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#"><i class="bi bi-house"></i> Home</a></li>
-            <li class="breadcrumb-item"><a href="#">Category</a></li>
-            <li class="breadcrumb-item active current">Service Details</li>
+            <li class="breadcrumb-item"><a href="index.html"><i class="bi bi-house"></i> Home</a></li>
+            <li class="breadcrumb-item"><a href="index.html#services">Services</a></li>
+            <li class="breadcrumb-item active current" id="active-page"></li>
           </ol>
         </nav>
       </div>
 
       <div class="title-wrapper">
-        <h1 id="service-title">Web &amp; App Development</h1>
-        <p id="service-subtitle">Modern full‑stack web and mobile apps with clean APIs, security, and CI/CD baked in.</p>
+        <h1 id="service-title"></h1>
+        <p id="service-subtitle"></p>
       </div>
     </div><!-- End Page Title -->
 
@@ -87,55 +87,19 @@
           <!-- Service Overview -->
           <div class="col-lg-8">
             <div class="service-content">
-              <h2 id="service-title-2">Web &amp; App Development</h2>
-              <p class="lead" id="service-lead">From backend APIs and databases to responsive frontends and mobile, we ship reliable systems with developer‑first UX.</p>
+              <h2 id="service-title-2"></h2>
+              <p class="lead" id="service-lead"></p>
 
               <div class="service-image" data-aos="fade-up" data-aos-delay="200">
-                <img id="service-image" src="assets/img/services/services-3.webp" alt="Web &amp; App Development" class="img-fluid rounded">
+                <img id="service-image" alt="Service Image" class="img-fluid rounded">
               </div>
 
-              <p id="service-description">We prioritise reliability, security and maintainability. Expect clean architecture, telemetry, and documentation that makes your team faster over time.</p>
+              <p id="service-description"></p>
 
               <!-- Service Features -->
               <div class="service-features" data-aos="fade-up" data-aos-delay="300">
                 <h4>What's Included</h4>
                 <div class="row gy-3" id="service-features">
-                  <div class="col-md-6">
-                    <div class="feature-item">
-                      <i class="bi bi-code-slash flex-shrink-0"></i>
-                      <div>
-                        <h5>Backend APIs</h5>
-                        <p>Design and build robust REST/GraphQL APIs with auth, logging, and observability.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="feature-item">
-                      <i class="bi bi-diagram-3 flex-shrink-0"></i>
-                      <div>
-                        <h5>CI/CD Pipelines</h5>
-                        <p>Automated build, test, and deploy pipelines for consistent, auditable releases.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="feature-item">
-                      <i class="bi bi-window-sidebar flex-shrink-0"></i>
-                      <div>
-                        <h5>Frontend UI</h5>
-                        <p>Accessible, performant interfaces built with modern frameworks.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="feature-item">
-                      <i class="bi bi-phone flex-shrink-0"></i>
-                      <div>
-                        <h5>Mobile Apps</h5>
-                        <p>Cross‑platform mobile experiences with shared services and telemetry.</p>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
 
@@ -143,34 +107,6 @@
               <div class="service-process" data-aos="fade-up" data-aos-delay="400">
                 <h4>Our Process</h4>
                 <div class="process-steps" id="service-process">
-                  <div class="step-item">
-                    <div class="step-number">01</div>
-                    <div class="step-content">
-                      <h5>Strategy Development</h5>
-                      <p>Clarify goals, constraints, interfaces, SLAs, and risks. Define roadmap and rollout plan with stakeholders.</p>
-                    </div>
-                  </div>
-                  <div class="step-item">
-                    <div class="step-number">02</div>
-                    <div class="step-content">
-                      <h5>Implementation</h5>
-                      <p>Iterative delivery with trunk‑based development, code reviews, and CI quality gates.</p>
-                    </div>
-                  </div>
-                  <div class="step-item">
-                    <div class="step-number">03</div>
-                    <div class="step-content">
-                      <h5>Optimization</h5>
-                      <p>Instrument, load‑test, and tune services, queries, and pipelines for performance and reliability.</p>
-                    </div>
-                  </div>
-                  <div class="step-item">
-                    <div class="step-number">04</div>
-                    <div class="step-content">
-                      <h5>Results &amp; Reporting</h5>
-                      <p>Ship dashboards, release notes, and documentation. Handover with clear operations playbooks.</p>
-                    </div>
-                  </div>
                 </div>
               </div>
 
@@ -185,22 +121,6 @@
               <div class="service-info">
                 <h4>Service Details</h4>
                 <ul class="service-facts" id="service-facts">
-                  <li>
-                    <span class="fact-label">Duration:</span>
-                    <span class="fact-value">3-6 Months</span>
-                  </li>
-                  <li>
-                    <span class="fact-label">Delivery:</span>
-                    <span class="fact-value">Weekly Reports</span>
-                  </li>
-                  <li>
-                    <span class="fact-label">Team Size:</span>
-                    <span class="fact-value">4-6 Specialists</span>
-                  </li>
-                  <li>
-                    <span class="fact-label">Support:</span>
-                    <span class="fact-value">24/7 Available</span>
-                  </li>
                 </ul>
               </div>
 
@@ -285,10 +205,7 @@
         </div>
         <div class="col-lg-3 col-md-3 footer-links">
           <h4>Services</h4>
-          <ul>
-            <li><a href="service-details.html">Web API Development</a></li>
-            <li><a href="service-details.html">CI/CD + Cloud Deployment</a></li>
-            <li><a href="service-details.html">Migration &amp; Maintenance</a></li>
+          <ul id="footer-service-links">
           </ul>
         </div>
 
@@ -387,6 +304,9 @@
         redirectHome();
         return;
       }
+
+      // Breadcrum
+      document.getElementById("active-page").textContent = service.title;
 
       // Titles
       document.getElementById("service-title").textContent = service.title;
