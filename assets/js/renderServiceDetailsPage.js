@@ -75,6 +75,10 @@
         </li>
       `).join("");
 
+    // Quote Service
+    const quoteServiceEl = document.getElementById("quote-service");
+    quoteServiceEl.setAttribute("value", service.title);
+
     function redirectHome() {
         window.location.replace("index.html");
     }
