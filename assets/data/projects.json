@@ -2,64 +2,16 @@
   "auth-core": {
     "title": "Authentication Core",
     "type": "API",
-    "category": "web",
+    "category": "Web",
     "description": "Register/login flows, refresh tokens, and role-based scopes. Ready to plug into existing identity layers.",
     "image": "assets/img/portfolio/portfolio-7.webp",
     "preview": "assets/img/portfolio/portfolio-7.webp",
     "link": "https://artisticnyungu.bsite.net/swagger/index.html",
     "linkTitle": "Open Swagger UI",
-    "tech": ["ASP.NET Core", "OpenAPI", "JWT"],
+    "tech": ["ASP.NET Core", "JWT"],
     "display": {
       "visible": true,
       "order": 1
-    }
-  },
-
-  "mobile-demo": {
-    "title": "Coming soon",
-    "type": "Apps",
-    "category": "mobile",
-    "description": "More demos coming soon. Contact us if you want early access.",
-    "image": "assets/img/portfolio/portfolio-8.webp",
-    "preview": "assets/img/portfolio/portfolio-8.webp",
-    "link": "#contact",
-    "linkTitle": "Coming soon",
-    "tech": [],
-    "display": {
-      "visible": true,
-      "order": 2
-    }
-  },
-
-  "automation": {
-    "title": "Coming soon",
-    "type": "Automation",
-    "category": "branding",
-    "description": "Automation runner and pipelines showcase coming soon.",
-    "image": "assets/img/portfolio/portfolio-9.webp",
-    "preview": "assets/img/portfolio/portfolio-9.webp",
-    "link": "#contact",
-    "linkTitle": "Coming soon",
-    "tech": [],
-    "display": {
-      "visible": false,
-      "order": 3
-    }
-  },
-
-  "tooling": {
-    "title": "Coming soon",
-    "type": "Tooling",
-    "category": "ui",
-    "description": "Developer tooling demos coming soon.",
-    "image": "assets/img/portfolio/portfolio-10.webp",
-    "preview": "assets/img/portfolio/portfolio-10.webp",
-    "link": "#contact",
-    "linkTitle": "Coming soon",
-    "tech": [],
-    "display": {
-      "visible": true,
-      "order": 4
     }
   }
 }
