@@ -137,31 +137,17 @@
         // Build category filters
         if (filtersContainer) {
             buildFilters(entries, filtersContainer);
+            if (typeof initFilters === 'function')
+                initFilters();
         }
 
-        let delay = 300;
         let html = "";
 
         for (const [key, project] of entries) {
-            html += buildProjectCard(key, project, delay);
-            delay += 100;
+            html += buildProjectCard(key, project);
         }
 
         container.innerHTML = html;
-
-        // Refresh plugins
-        if (window.AOS) AOS.refresh();
-
-        if (window.Isotope) {
-            new Isotope(container, {
-                itemSelector: ".portfolio-item",
-                layoutMode: "masonry"
-            });
-        }
-
-        if (window.GLightbox) {
-            GLightbox({ selector: ".glightbox" });
-        }
     }
 
     function buildFilters(entries, filtersContainer) {
@@ -176,13 +162,13 @@
         filtersContainer.innerHTML = html;
     }
 
-    function buildProjectCard(key, project, delay) {
+    function buildProjectCard(key, project) {
         const techHtml = (project.tech || [])
             .map(t => `<span class="tech-badge">${t}</span>`)
             .join("");
 
         return `
-<div class="col-xl-4 col-lg-6 portfolio-item isotope-item filter-${project.category}" data-aos="fade-up" data-aos-delay="${delay}">
+<div class="col-xl-4 col-lg-6 portfolio-item isotope-item filter-${project.category}">
   <div class="portfolio-wrapper">
     <div class="portfolio-image">
       <img src="${project.image}" alt="${project.title}" class="img-fluid" loading="lazy">
