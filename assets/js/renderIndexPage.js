@@ -156,7 +156,7 @@
         let html = `<li data-filter="*" class="filter-active">All</li>`;
 
         for (const cat of categories) {
-            html += `<li data-filter=".filter-${cat}">${capitalize(cat)}</li>`;
+            html += `<li data-filter=".filter-${slugify(cat)}">${cat}</li>`;
         }
 
         filtersContainer.innerHTML = html;
@@ -168,7 +168,7 @@
             .join("");
 
         return `
-<div class="col-xl-4 col-lg-6 portfolio-item isotope-item filter-${project.category}">
+<div class="col-xl-4 col-lg-6 portfolio-item isotope-item filter-${slugify(project.category)}">
   <div class="portfolio-wrapper">
     <div class="portfolio-image">
       <img src="${project.image}" alt="${project.title}" class="img-fluid" loading="lazy">

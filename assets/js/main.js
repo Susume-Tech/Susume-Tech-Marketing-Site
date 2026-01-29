@@ -226,3 +226,15 @@ function initFilters(){
 
   });
 }
+
+function slugify(text) {
+  return text
+    .toString()
+    .normalize('NFKD')                 // split accented characters
+    .replace(/[\u0300-\u036f]/g, '')   // remove diacritics
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9\s-]/g, '')      // remove invalid chars
+    .replace(/[\s_-]+/g, '-')          // collapse whitespace and dashes
+    .replace(/^-+|-+$/g, '');          // trim dashes
+}
