@@ -3,9 +3,9 @@
     "category": "Backend Engineering",
     "title": "Web API Development",
     "subtitle": "Secure, observable APIs designed for real production workloads.",
-    "lead": "Design, build, and document secure REST and GraphQL APIs with authentication, logging, and observability built in.",
+    //"lead": "Design, build, and document secure REST and GraphQL APIs with authentication, logging, and observability built in.",
     "image": "assets/img/services/services-1.webp",
-    "description": "We build APIs that are boring in the best way: predictable, secure, well-documented, and easy to operate. Our focus is long-term maintainability, versioning strategy, and operational visibility so your systems scale without surprises.",
+    //"description": "We build APIs that are boring in the best way: predictable, secure, well-documented, and easy to operate. Our focus is long-term maintainability, versioning strategy, and operational visibility so your systems scale without surprises.",
     "display": {
       "visible": true,
       "order": 1,
@@ -33,7 +33,8 @@
         "text": "Auto-generated API docs and onboarding guides for internal and external consumers."
       }
     ],
-    "process": [
+
+    /* "process": [
       {
         "title": "Requirements & Domain Modeling",
         "text": "Clarify business workflows, data ownership, and integration points."
@@ -50,7 +51,8 @@
         "title": "Release & Monitoring",
         "text": "Deploy with dashboards, alerts, and operational runbooks."
       }
-    ],
+    ],*/
+
     "facts": {
       "Duration": "1–3 Months",
       "Delivery": "Weekly milestones",
@@ -62,9 +64,9 @@
     "category": "DevOps & Automation",
     "title": "CI/CD + Cloud Deployment",
     "subtitle": "Automated pipelines and reproducible infrastructure.",
-    "lead": "Automated build, test, and deploy pipelines with cloud environments and infrastructure as code.",
+    //"lead": "Automated build, test, and deploy pipelines with cloud environments and infrastructure as code.",
     "image": "assets/img/services/services-2.webp",
-    "description": "We design CI/CD systems that are deterministic, auditable, and easy to operate. Every change is tested, versioned, and deployable on demand with minimal human intervention.",
+    //"description": "We design CI/CD systems that are deterministic, auditable, and easy to operate. Every change is tested, versioned, and deployable on demand with minimal human intervention.",
     "display": {
       "visible": true,
       "order": 2
@@ -91,7 +93,8 @@
         "text": "Secrets management, dependency scanning, and policy enforcement."
       }
     ],
-    "process": [
+
+    /*"process": [
       {
         "title": "Pipeline Design",
         "text": "Map release flow and compliance requirements."
@@ -108,7 +111,8 @@
         "title": "Operational Handover",
         "text": "Document, train teams, and provide runbooks."
       }
-    ],
+    ],*/
+
     "facts": {
       "Duration": "1–2 Months",
       "Delivery": "Pipeline per week",
@@ -120,9 +124,9 @@
     "category": "Modernization",
     "title": "Migration & Maintenance",
     "subtitle": "Safely modernize legacy systems without downtime.",
-    "lead": "Migrate legacy systems, improve reliability and observability, and provide ongoing maintenance.",
+    //"lead": "Migrate legacy systems, improve reliability and observability, and provide ongoing maintenance.",
     "image": "assets/img/services/services-3.webp",
-    "description": "We specialize in incremental modernization—moving systems piece-by-piece while keeping production stable. Expect careful data handling, compatibility layers, and staged cutovers.",
+    //"description": "We specialize in incremental modernization—moving systems piece-by-piece while keeping production stable. Expect careful data handling, compatibility layers, and staged cutovers.",
     "display": {
       "visible": true
     },
@@ -148,7 +152,8 @@
         "text": "Architecture reviews and technical debt assessment."
       }
     ],
-    "process": [
+
+    /*"process": [
       {
         "title": "System Audit",
         "text": "Map dependencies and risks."
@@ -165,7 +170,8 @@
         "title": "Stabilization",
         "text": "Monitoring and performance tuning."
       }
-    ],
+    ],*/
+
     "facts": {
       "Duration": "2–6 Months",
       "Delivery": "Bi-weekly",
@@ -177,9 +183,9 @@
     "category": "Developer Experience",
     "title": "Dev-first UX",
     "subtitle": "Interfaces built for engineers, not marketing screenshots.",
-    "lead": "Operational dashboards and internal tools designed for speed, clarity, and reliability.",
+    //"lead": "Operational dashboards and internal tools designed for speed, clarity, and reliability.",
     "image": "assets/img/services/services-4.webp",
-    "description": "We design internal tooling that minimizes friction for developers and operators: fast load times, keyboard-driven workflows, and zero ambiguity.",
+    //"description": "We design internal tooling that minimizes friction for developers and operators: fast load times, keyboard-driven workflows, and zero ambiguity.",
     "display": {
       "visible": true
     },
@@ -200,7 +206,8 @@
         "text": "Task-focused layouts."
       }
     ],
-    "process": [
+
+    /*"process": [
       {
         "title": "User Interviews",
         "text": "Understand operator workflows."
@@ -213,7 +220,8 @@
         "title": "Build",
         "text": "Production-ready UI."
       }
-    ],
+    ],*/
+
     "facts": {
       "Duration": "1–2 Months",
       "Delivery": "Weekly",
@@ -224,10 +232,10 @@
   "resilient-architecture": {
     "category": "System Design",
     "title": "Resilient Architecture",
-    "subtitle": "Boring, reliable systems that scale safely.",
-    "lead": "Modern tooling paired with conservative patterns that avoid catastrophic failure.",
+    "subtitle": "Reliable systems that scale safely.",
+    //"lead": "Modern tooling paired with conservative patterns that avoid catastrophic failure.",
     "image": "assets/img/services/services-5.webp",
-    "description": "We prioritize failure isolation, graceful degradation, and capacity planning over hype-driven architecture trends.",
+    //"description": "We prioritize failure isolation, graceful degradation, and capacity planning over hype-driven architecture trends.",
     "features": [
       {
         "icon": "bi-diagram-2",
@@ -245,7 +253,7 @@
         "text": "Predictable scaling."
       }
     ],
-    "process": [
+   /*"process": [
       {
         "title": "Architecture Review",
         "text": "Map risks."
@@ -258,7 +266,7 @@
         "title": "Validation",
         "text": "Load and chaos testing."
       }
-    ],
+    ],*/
     "facts": {
       "Duration": "1–3 Months",
       "Delivery": "Milestones",
@@ -270,9 +278,9 @@
     "category": "Quality Engineering",
     "title": "Integrated QA",
     "subtitle": "Quality gates as part of your release train.",
-    "lead": "Contract tests, load tests, and chaos drills built directly into CI/CD.",
+    //"lead": "Contract tests, load tests, and chaos drills built directly into CI/CD.",
     "image": "assets/img/services/services-6.webp",
-    "description": "Quality is enforced automatically—not manually at the end of a project.",
+    //"description": "Quality is enforced automatically—not manually at the end of a project.",
     "display": {
       "visible": true
     },
@@ -293,7 +301,8 @@
         "text": "Prove failure recovery."
       }
     ],
-    "process": [
+
+    /*"process": [
       {
         "title": "Test Strategy",
         "text": "Define coverage."
@@ -306,7 +315,8 @@
         "title": "Reporting",
         "text": "Dashboards and alerts."
       }
-    ],
+    ],*/
+
     "facts": {
       "Duration": "1–2 Months",
       "Delivery": "Continuous",
