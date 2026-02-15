@@ -72,7 +72,7 @@
           </a>
         </h4>
 
-        <p>${service.lead}</p>
+        <p  style="display: none;">${service.lead}</p>
 
         ${service._display.badge ? `<div class="service-badge">${service._display.badge}</div>` : ""}
 
