@@ -4,7 +4,7 @@
     "title": "Web API Development",
     "subtitle": "Secure, observable APIs designed for real production workloads.",
     
-    "image": "assets/img/services/services-1.webp",
+    "image": "assets/img/services/web-api-development.webp",
     
     "display": {
       "visible": true,
@@ -46,7 +46,7 @@
     "title": "CI/CD + Cloud Deployment",
     "subtitle": "Automated pipelines and reproducible infrastructure.",
    
-    "image": "assets/img/services/services-2.webp",
+    "image": "assets/img/services/cicd-cloud-deployment.webp",
     
     "display": {
       "visible": true,
@@ -87,7 +87,7 @@
     "title": "Migration & Maintenance",
     "subtitle": "Safely modernize legacy systems without downtime.",
     
-    "image": "assets/img/services/services-3.webp",
+    "image": "assets/img/services/migration-maintenance.webp",
    
     "display": {
       "visible": true
@@ -127,7 +127,7 @@
     "title": "Dev-first UX",
     "subtitle": "Interfaces built for engineers, not marketing screenshots.",
     
-    "image": "assets/img/services/services-4.webp",
+    "image": "assets/img/services/dev-first-ux.webp",
     
     "display": {
       "visible": true
@@ -162,7 +162,7 @@
     "title": "Resilient Architecture",
     "subtitle": "Boring, reliable systems that scale safely.",
     
-    "image": "assets/img/services/services-5.webp",
+    "image": "assets/img/services/resilient-architecture.webp",
     
     "features": [
       {
@@ -194,7 +194,7 @@
     "title": "Integrated QA",
     "subtitle": "Quality gates as part of your release train.",
     
-    "image": "assets/img/services/services-6.webp",
+    "image": "assets/img/services/integrated-qa.webp",
    
     "display": {
       "visible": true

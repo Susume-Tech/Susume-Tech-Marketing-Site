@@ -62,9 +62,9 @@
         return `
     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="${delay}">
       <div class="service-card">
-        <div class="service-icon">
+        <a href="service-details.html?service=${key}" class="service-icon">
           <i class="bi ${icon}"></i>
-        </div>
+        </a>
 
         <h4>
           <a href="service-details.html?service=${key}">
@@ -72,7 +72,7 @@
           </a>
         </h4>
 
-        <p>${service.lead}</p>
+        <p  style="display: none;">${service.lead}</p>
 
         ${service._display.badge ? `<div class="service-badge">${service._display.badge}</div>` : ""}
 
