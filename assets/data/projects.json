@@ -1,0 +1,17 @@
+{
+  "auth-core": {
+    "title": "Authentication Core",
+    "type": "API",
+    "category": "Web",
+    "description": "Register/login flows, refresh tokens, and role-based scopes. Ready to plug into existing identity layers.",
+    "image": "assets/img/demo/auth-api.webp",
+    "preview": "assets/img/demo/auth-api.webp",
+    "link": "https://artisticnyungu.bsite.net/swagger/index.html",
+    "linkTitle": "Open Swagger UI",
+    "tech": ["ASP.NET Core", "JWT"],
+    "display": {
+      "visible": true,
+      "order": 1
+    }
+  }
+}

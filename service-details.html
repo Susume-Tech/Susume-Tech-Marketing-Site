@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Service Details - Susume Tech</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="service-details-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
+        <h1 class="sitename">Susume Tech</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#portfolio">Demos</a></li>
+          <li><a href="index.html#team">Team</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="index.html#contact">Get Started</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title">
+      <div class="breadcrumbs">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html"><i class="bi bi-house"></i> Home</a></li>
+            <li class="breadcrumb-item"><a href="index.html#services">Services</a></li>
+            <li class="breadcrumb-item active current" id="active-page"></li>
+          </ol>
+        </nav>
+      </div>
+
+      <div class="title-wrapper">
+        <h1 id="service-title"></h1>
+        <p id="service-subtitle"></p>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Service Details Section -->
+    <section id="service-details" class="service-details section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <!-- Service Overview -->
+          <div class="col-lg-8">
+            <div class="service-content">
+              <h2 id="service-title-2"></h2>
+              <p class="lead" id="service-lead"></p>
+
+              <div class="service-image" data-aos="fade-up" data-aos-delay="200">
+                <img id="service-image" alt="Service Image" class="img-fluid rounded">
+              </div>
+
+              <p id="service-description"></p>
+
+              <!-- Service Features -->
+              <div class="service-features" data-aos="fade-up" data-aos-delay="300">
+                <h4>What's Included</h4>
+                <div class="row gy-3" id="service-features">
+                </div>
+              </div>
+
+              <!-- Process Steps -->
+              <div class="service-process" data-aos="fade-up" data-aos-delay="400" style="display: none;">
+                <h4>Our Process</h4>
+                <div class="process-steps" id="service-process">
+                </div>
+              </div>
+
+            </div>
+          </div><!-- End Service Content -->
+
+          <!-- Sidebar -->
+          <div class="col-lg-4">
+            <div class="sidebar" data-aos="fade-up" data-aos-delay="200">
+
+              <!-- Service Quick Facts -->
+              <div class="service-info"  style="display: none;">
+                <h4>Service Details</h4>
+                <ul class="service-facts" id="service-facts">
+                </ul>
+              </div>
+
+              <!-- Testimonial -->
+              <div class="service-testimonial" style="display: none;">
+                <div class="testimonial-content">
+                  <p>Client testimonial coming soon.</p>
+                  <div class="testimonial-author">
+                    <img src="assets/img/person/person-f-3.webp" alt="Sarah Johnson" class="author-image">
+                    <div class="author-info">
+                      <h5>Sarah Johnson</h5>
+                      <span>Marketing Director</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Contact Form -->
+              <div class="inquiry-form">
+                <h4>Get a Quote</h4>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                  <input type="hidden" name="access_key" value="6d3cf458-fc0f-4a87-99ef-968857e5bbac">
+                  <input type="checkbox" name="botcheck" style="display:none;">
+                  <input type="hidden" name="captcha" value="true">
+                  <div class="form-group mb-3">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
+                  </div>
+                  <div class="form-group mb-3">
+                    <input type="email" name="email" class="form-control" id="email" placeholder="Your Email" required="">
+                  </div>
+                  <div class="form-group mb-3">
+                    <input type="tel" name="phone" class="form-control" id="phone" placeholder="Your Phone">
+                  </div>
+                  <input type="hidden" name="subject" value="Service Quote Request">
+                  <input type="hidden" name="service" id="quote-service">
+                  <div class="form-group mb-4">
+                    <textarea class="form-control" name="message" rows="5" placeholder="Tell us about your project requirements..." required=""></textarea>
+                  </div>
+                  <div class="loading" style="display:none">Loading</div>
+                  <div class="error-message" style="display:none"></div>
+                  <div class="sent-message" style="display:none">Your message has been sent. Thank you!</div>
+                  <button type="submit" class="btn-submit w-100">Request Quote</button>
+                </form>
+              </div>
+
+            </div>
+          </div><!-- End Sidebar -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Service Details Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Susume Tech</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <!--
+            <p>Cape Town, South Africa</p>
+            <p>Remote friendly</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+27 10 500 9000</span></p>
+          -->
+            <p><strong>Email:</strong> <span>info@susume.tech</span></p>
+          </div>
+          
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html#hero">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#portfolio">Demos</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-3 footer-links">
+          <h4>Services</h4>
+          <ul id="footer-service-links">
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-3 footer-links">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Susume Tech</strong> <span>All Rights Reserved</span></p>
+      <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Dynamic Rendering JS File -->
+  <script src="assets/js/renderServiceDetailsPage.js"></script>
+
+  <script>
+    (function(){
+      document.querySelectorAll("form[action='https://api.web3forms.com/submit']").forEach(function(form){
+        form.addEventListener('submit', function(e){
+          e.preventDefault();
+          var loading = form.querySelector('.loading');
+          var errorEl = form.querySelector('.error-message');
+          var sentEl = form.querySelector('.sent-message');
+          if (loading) loading.style.display = 'block';
+          if (errorEl) { errorEl.style.display = 'none'; errorEl.textContent = ''; }
+          if (sentEl) sentEl.style.display = 'none';
+          var formData = new FormData(form);
+          fetch(form.action, { method: 'POST', body: formData, headers: { 'Accept': 'application/json' } })
+            .then(function(res){
+              return res.json().catch(function(){ return {}; }).then(function(data){ return { ok: res.ok, data: data }; });
+            })
+            .then(function(result){
+              if (loading) loading.style.display = 'none';
+              if (result.ok && (!result.data || result.data.success !== false)) {
+                if (sentEl) sentEl.style.display = 'block';
+                form.reset();
+              } else {
+                if (errorEl) { errorEl.textContent = (result.data && result.data.message) || 'Form submission failed.'; errorEl.style.display = 'block'; }
+              }
+            })
+            .catch(function(err){
+              if (loading) loading.style.display = 'none';
+              if (errorEl) { errorEl.textContent = String(err); errorEl.style.display = 'block'; }
+            });
+        });
+      });
+    })();
+  </script>
+
+</body>
+
+</html>
