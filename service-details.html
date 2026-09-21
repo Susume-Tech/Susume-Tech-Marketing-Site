@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="google-adsense-account" content="ca-pub-3385224777190857">
   <title>Service Details - Susume Tech</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
@@ -48,6 +49,7 @@
           <li><a href="index.html#portfolio">Demos</a></li>
           <li><a href="index.html#team">Team</a></li>
           <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="https://blog.susume.tech">Blog</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -152,7 +154,7 @@
                     <input type="email" name="email" class="form-control" id="email" placeholder="Your Email" required="">
                   </div>
                   <div class="form-group mb-3">
-                    <input type="tel" name="phone" class="form-control" id="phone" placeholder="Your Phone">
+                    <input type="tel" name="phone" class="form-control" id="phone" placeholder="Your Phone (e.g. +27 82 123 4567)" maxlength="20" pattern="\+?[0-9][0-9 \(\)\-]{7,18}[0-9]" title="Enter a valid phone number, e.g. +27 82 123 4567 or 082 123 4567" autocomplete="tel">
                   </div>
                   <input type="hidden" name="subject" value="Service Quote Request">
                   <input type="hidden" name="service" id="quote-service">
@@ -204,6 +206,7 @@
             <li><a href="index.html#services">Services</a></li>
             <li><a href="index.html#portfolio">Demos</a></li>
             <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="https://blog.susume.tech">Blog</a></li>
           </ul>
         </div>
         <div class="col-lg-3 col-md-3 footer-links">
@@ -260,6 +263,13 @@
       document.querySelectorAll("form[action='https://api.web3forms.com/submit']").forEach(function(form){
         form.addEventListener('submit', function(e){
           e.preventDefault();
+          var phoneEl = form.querySelector('input[name="phone"]');
+          if (phoneEl) {
+            var digits = phoneEl.value.replace(/\D/g, '');
+            var bad = digits.length > 0 && (digits.length < 9 || digits.length > 15 || /^(\d)\1+$/.test(digits) || /^0{3,}/.test(digits.replace(/^27/, '')));
+            phoneEl.setCustomValidity(bad ? 'Please enter a valid phone number.' : '');
+            if (bad) { phoneEl.reportValidity(); return; }
+          }
           var loading = form.querySelector('.loading');
           var errorEl = form.querySelector('.error-message');
           var sentEl = form.querySelector('.sent-message');

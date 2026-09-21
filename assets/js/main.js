@@ -186,6 +186,7 @@
     data = await res.json();
 
     const services = document.getElementById("footer-service-links");
+    if (!services) return;
       services.innerHTML = Object.entries(data).map(([k, v]) => `
         <li><a href="service-details.html?service=${k}">${v.title}</a></li>
       `).join("");

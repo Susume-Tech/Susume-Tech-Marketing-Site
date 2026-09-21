@@ -2619,7 +2619,7 @@ section,
   font-family: inherit;
 }
 
-.contact .contact-form-card .php-email-form .submit-btn {
+.contact .contact-form-card .submit-btn {
   width: 100%;
   background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), #6366f1 30%));
   color: var(--contrast-color);
@@ -2637,7 +2637,7 @@ section,
   overflow: hidden;
 }
 
-.contact .contact-form-card .php-email-form .submit-btn:before {
+.contact .contact-form-card .submit-btn:before {
   content: "";
   position: absolute;
   top: 0;
@@ -2648,26 +2648,26 @@ section,
   transition: left 0.6s ease;
 }
 
-.contact .contact-form-card .php-email-form .submit-btn:hover {
+.contact .contact-form-card .submit-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 12px 35px color-mix(in srgb, var(--accent-color), transparent 75%);
 }
 
-.contact .contact-form-card .php-email-form .submit-btn:hover:before {
+.contact .contact-form-card .submit-btn:hover:before {
   left: 100%;
 }
 
-.contact .contact-form-card .php-email-form .submit-btn:hover i {
+.contact .contact-form-card .submit-btn:hover i {
   transform: translateX(3px);
 }
 
-.contact .contact-form-card .php-email-form .submit-btn span,
-.contact .contact-form-card .php-email-form .submit-btn i {
+.contact .contact-form-card .submit-btn span,
+.contact .contact-form-card .submit-btn i {
   position: relative;
   z-index: 1;
 }
 
-.contact .contact-form-card .php-email-form .submit-btn i {
+.contact .contact-form-card .submit-btn i {
   font-size: 16px;
   transition: transform 0.3s ease;
 }
