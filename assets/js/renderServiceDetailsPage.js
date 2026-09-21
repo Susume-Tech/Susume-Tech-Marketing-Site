@@ -56,7 +56,7 @@
 
     // Process
     const processEl = document.getElementById("service-process");
-    processEl.innerHTML = service.process.map((p, i) => `
+    processEl.innerHTML = (service.process || []).map((p, i) => `
         <div class="step-item">
           <div class="step-number">${String(i + 1).padStart(2, "0")}</div>
           <div class="step-content">
@@ -68,7 +68,7 @@
 
     // Facts
     const factsEl = document.getElementById("service-facts");
-    factsEl.innerHTML = Object.entries(service.facts).map(([k, v]) => `
+    factsEl.innerHTML = Object.entries(service.facts || {}).map(([k, v]) => `
         <li>
           <span class="fact-label">${k}:</span>
           <span class="fact-value">${v}</span>
